@@ -11,5 +11,8 @@ If there is a tweet that is in the 10 latest tweets but not on the bucket, that 
 All the chyrons from the last hour will be requested and stripped from 'stopwords' to avoid drawing relations on a tweet and a chyron based on meaningless words (see stopwords.txt). The tweet in question will also be stripped from 'stopwords'.  
 Finally, the tweet will be compared to every single chyron. If there is a single chyron that passes certain threshold on the similarity between the tweet and the chyron, a tweet will be posted. Only a single chyron can be posted per tweet: the one that has the highest relation score.  
 
+**Other**  
+The chyron API used is sometimes not entirely accurate on the text extraction from the images in the Fox News live stream. Some characters are cleaned up in the script, but there is really not much more that can be done regarding that issue. If time and resources allowed, a custom OCR could be run on a Fox News stream to grab more accurate chyrons.
+
 **Developer**  
 This bot was created and developed by [Andres Anhalzer](https://www.linkedin.com/in/andr%C3%A9s-anhalzer-80b526137/) for Capital News Service. 
